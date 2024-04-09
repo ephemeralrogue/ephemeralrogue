@@ -5,7 +5,6 @@ import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import DateComponent from "./date";
 import MoreStories from "./more-stories";
-import Onboarding from "./onboarding";
 import PortableText from "./portable-text";
 
 import * as demo from "@/sanity/lib/demo";
@@ -89,7 +88,7 @@ export default async function Page() {
   return (
     <div className="container mx-auto px-5">
       <Intro title={settings?.title} description={settings?.description} />
-      {heroPost ? (
+      {heroPost && (
         <HeroPost
           title={heroPost.title}
           slug={heroPost.slug}
@@ -98,8 +97,6 @@ export default async function Page() {
           date={heroPost.date}
           author={heroPost.author}
         />
-      ) : (
-        <Onboarding />
       )}
       {heroPost?._id && (
         <aside>

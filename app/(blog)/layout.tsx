@@ -2,7 +2,11 @@ import "../globals.css";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
-import { PortableTextBlock, VisualEditing, toPlainText } from "next-sanity";
+import {
+  PortableTextBlock,
+  VisualEditing,
+  toPlainText
+} from "next-sanity";
 import { Inter } from "next/font/google";
 import { draftMode } from "next/headers";
 import { Suspense } from "react";
@@ -12,7 +16,10 @@ import PortableText from "./portable-text";
 
 import * as demo from "@/sanity/lib/demo";
 import { sanityFetch } from "@/sanity/lib/fetch";
-import { SettingsQueryResponse, settingsQuery } from "@/sanity/lib/queries";
+import {
+  SettingsQueryResponse,
+  settingsQuery
+} from "@/sanity/lib/queries";
 import { resolveOpenGraphImage } from "@/sanity/lib/utils";
 
 export async function generateMetadata(): Promise<Metadata> {

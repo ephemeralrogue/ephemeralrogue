@@ -3,14 +3,25 @@
  * This config is used to set up Sanity Studio that's mounted on the `app/(sanity)/studio/[[...tool]]/page.tsx` route
  */
 import { visionTool } from "@sanity/vision";
-import { PluginOptions, defineConfig } from "sanity";
+import {
+  PluginOptions,
+  defineConfig
+} from "sanity";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 
-import { apiVersion, dataset, projectId, studioUrl } from "@/sanity/lib/api";
+import {
+  apiVersion,
+  dataset,
+  projectId,
+  studioUrl
+} from "@/sanity/lib/api";
 import { locate } from "@/sanity/plugins/locate";
-import { pageStructure, singletonPlugin } from "@/sanity/plugins/settings";
+import {
+  pageStructure,
+  singletonPlugin
+} from "@/sanity/plugins/settings";
 import { assistWithPresets } from "@/sanity/plugins/assist";
 import author from "@/sanity/schemas/documents/author";
 import post from "@/sanity/schemas/documents/post";
