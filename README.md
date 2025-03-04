@@ -1,12 +1,11 @@
-<h1 align="center">{ e }</h1>
+<h1 align="center">{ e }, <i>Soon to be L V N A C Y</i></h1>
 <br>
 
 <p align="center">
   <img src="./assets/edward_small.png" alt="ephemeralrogue.bookworm-emblem" width="120px" height="120px"/>
-  <br>
-  <i>i pretend to know what i'm doing so i can get stuff done.
-    <br>currently working on a number of personal projects</i>
-  <br>
+  • >>> •
+  <img src=>
+  
 </p>
 
 <p align="center">
